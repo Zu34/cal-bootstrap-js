@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple JS Calculator</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;700;800&display=swap">
+</head>
+<body class="light-mode"> <!-- Start in light mode -->
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <!-- Calculator Box -->
+        <div id="calculator" class="p-3 rounded shadow">
+            <div class="top text-center mb-2">
+                <h3>Simple JS Calculator</h3>
+                <button id="toggleMode" class="btn btn-outline-secondary">Toggle Dark Mode</button>
+            </div>
+            <div id="result" class="bg-dark text-white text-end p-3 mb-3 rounded">0</div>
+            <div class="keys row g-2">
+                <!-- Button layout using Bootstrap grid system -->
+                <div class="col-3"><button class="btn btn-secondary w-100">7</button></div>
+                <div class="col-3"><button class="btn btn-secondary w-100">8</button></div>
+                <div class="col-3"><button class="btn btn-secondary w-100">9</button></div>
+                <div class="col-3"><button class="btn btn-warning w-100">+</button></div>
+                <div class="col-3"><button class="btn btn-secondary w-100">4</button></div>
+                <div class="col-3"><button class="btn btn-secondary w-100">5</button></div>
+                <div class="col-3"><button class="btn btn-secondary w-100">6</button></div>
+                <div class="col-3"><button class="btn btn-warning w-100">-</button></div>
+                <div class="col-3"><button class="btn btn-secondary w-100">1</button></div>
+                <div class="col-3"><button class="btn btn-secondary w-100">2</button></div>
+                <div class="col-3"><button class="btn btn-secondary w-100">3</button></div>
+                <div class="col-3"><button class="btn btn-warning w-100">/</button></div>
+                <div class="col-3"><button id="clear" class="btn btn-danger w-100">C</button></div>
+                <div class="col-3"><button class="btn btn-secondary w-100">0</button></div>
+                <div class="col-3"><button class="btn btn-secondary w-100">.</button></div>
+                <div class="col-3"><button class="btn btn-warning w-100">*</button></div>
+                <div class="col-3"><button id="eval" class="btn btn-success w-100">=</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/calc-click.js"></script>
+    <script src="js/calc-keydown.js"></script>
+    <script src="js/darkmode-toggle.js"></script> <!-- Include the JS for toggle functionality -->
+</body>
+</html>
